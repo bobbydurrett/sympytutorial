@@ -1,0 +1,10 @@
+3.0
+2.8284271247461903
+sqrt(3)
+2*sqrt(2)
+3
+<class 'sympy.core.numbers.Integer'>
+<class 'int'>
+3
+<class 'sympy.core.numbers.Rational'>
+3/5
