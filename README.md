@@ -5,7 +5,7 @@ https://docs.sympy.org/latest/tutorial/index.html
 
 Next section:
 
-https://docs.sympy.org/latest/tutorial/printing.html
+https://docs.sympy.org/latest/tutorial/simplification.html
 
 Made lprint.py to output latex as matplotlib plot.
 
