@@ -21,3 +21,7 @@ yum install texlive*
 
 second yum command was needed to get dvipng
 
+Linux console c7.py unicode and LaTex works
+but not in Putty or Windows console without
+LaTex installed.
+
