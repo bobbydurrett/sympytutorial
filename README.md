@@ -1,5 +1,5 @@
 # sympytutorial
-My Python scripts working through Sympy Tutorial
+My Python scripts working through SymPy Tutorial
 
 https://docs.sympy.org/latest/tutorial/index.html
 
