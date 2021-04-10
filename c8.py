@@ -172,7 +172,7 @@ spprint(powdenest((z**a)**b, force=True))
 
 # exponentials and logs
 
-# log(x) = ln(x) log base 2 of x I think
+# log(x) = ln(x) log base e of x I think
 
 spprint(ln(x))
 
