@@ -116,6 +116,62 @@ spprint(expr.doit())
 spprint(limit(1/x, x, 0, '+'))
 spprint(limit(1/x, x, 0, '-'))
 
+# series - not sure about this
+# not related to CS big O
+
+expr = exp(sin(x))
+spprint(expr.series(x, 0, 4))
+
+spprint(x + x**3 + x**6 + O(x**4))
+
+spprint(x*O(1))
+
+# how do I enter formalas to print and do not get them
+# immediately simplified?
+
+spprint(expr.series(x, 0, 4).removeO())
+
+# another thing I do not understand
+
+f, g = symbols('f g', cls=Function)
+spprint(differentiate_finite(f(x)*g(x)))
+
+f = Function('f')
+dfdx = f(x).diff(x)
+spprint(dfdx.as_finite_difference())
+
+f = Function('f')
+spprint(f)
+spprint(f(x))
+d2fdx2 = f(x).diff(x, 2)
+spprint(d2fdx2)
+h = Symbol('h')
+spprint(d2fdx2.as_finite_difference([-3*h,-h,2*h]))
+
+spprint(finite_diff_weights(2, [-3, -1, 2], 0)[-1][-1])
+
+x_list = [-3, 1, 2]
+spprint(x_list)
+
+y_list = symbols('a b c')
+spprint(y_list)
+
+spprint(apply_finite_diff(1, x_list, y_list, 0))
+
+# way to get 2*x/x without evaluating
+# there is no Div apparently
+
+y = Mul(2*x,1/x, evaluate=False)
+
+# unsimplified
+
+spprint(y)
+
+# simplified
+
+spprint(y.doit())
+
+# I guess there is Add, Mul, Pow
 
 
 
