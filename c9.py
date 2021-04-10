@@ -91,6 +91,31 @@ spprint(integ.doit())
 
 # could not lprint this one. Bummer.
 
+# limits
+
+spprint(limit(sin(x)/x, x, 0))
+
+# things that cannot be done by subs oo/oo = nan
+
+expr = x**2/exp(x)
+spprint(expr)
+spprint(expr.subs(x, oo))
+spprint(limit(expr, x, oo))
+
+# unevaluated
+
+expr = Limit((cos(x) - 1)/x, x, 0)
+spprint(expr)
+spprint(expr.doit())
+
+# + or - side of limit
+# I guess you do not know if x is
+# positive or negative
+# maybe can say that when defining symbol
+
+spprint(limit(1/x, x, 0, '+'))
+spprint(limit(1/x, x, 0, '-'))
+
 
 
 
