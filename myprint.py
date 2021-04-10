@@ -15,6 +15,10 @@ def lprint(sympy_objects):
     ax.axis('off')
     plt.show()
 
+def spprint(o):
+    pprint(o)
+    print(' ')
+
 if __name__ == "__main__":
 
     x = symbols('x')
