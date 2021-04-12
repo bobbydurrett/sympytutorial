@@ -1,7 +1,7 @@
 # https://docs.sympy.org/latest/tutorial/calculus.html
 
 from sympy import *
-from myprint import spprint, lprint
+from myprint import spprint
 
 x, y, z = symbols('x y z')
 init_printing(use_unicode=False)
@@ -88,8 +88,6 @@ spprint(integ.doit())
 integ = Integral(x**y*exp(-x), (x, 0, oo))
 spprint(integ)
 spprint(integ.doit())
-
-# could not lprint this one. Bummer.
 
 # limits
 

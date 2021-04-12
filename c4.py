@@ -19,9 +19,4 @@ pprint(besselj(nu, z).rewrite(jn))
 
 print(latex(Integral(cos(x)**2, (x, 0, pi))))
 
-from myprint import lprint
-
-lprint(Integral(cos(x)**2, (x, 0, pi)))
-
-
 

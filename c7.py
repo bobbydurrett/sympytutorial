@@ -12,7 +12,3 @@ init_printing(use_unicode=True)
 
 pprint(Integral(sqrt(1/x), x))
 
-from myprint import lprint
-
-lprint(Integral(sqrt(1/x), x))
-
