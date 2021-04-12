@@ -20,6 +20,8 @@ endl - writes rest of .tex file and converts to .pdf and opens
 
 onel - calls startl, addlm, endl for one sympy object
 
+global variable myprint.tex_file
+
 """
 
 def write_tex_file(tex_file, text_string):
