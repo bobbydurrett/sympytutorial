@@ -46,17 +46,18 @@ have to delete test.aux and test.log files
 
 could do
 
-startlatex - creates .tex file with header
+startl - creates .tex file with header
 
-addlatexline - converts one sympy object to latex and writes to file
-               between $$ $$
+addlm - converts one sympy object to latex and writes to file
+        between $$ $$
+          
+addlt - adds plain text line for a comment
                
-finishlatex - writes rest of .tex file and converts to .pdf and opens
+endl - writes rest of .tex file and converts to .pdf and opens
 
-onelatexline - calls startlatex, addlatexline, finishlatex for one sympy 
-               object
+onel - calls startl, addlm, endl for one sympy object
                
 put this in myprint.py
 
-or I could just print out the latex and edit manually.
+
 
