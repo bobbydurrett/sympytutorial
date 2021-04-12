@@ -31,3 +31,10 @@ Got rid of lprint using matplotlib
 Might rewrite to call latex command line utilities directly
 and generate a pdf
 
+Need to generate something like example2.tex and run the 
+utility to make the pdf. Maybe some standard template.
+I.e. write my own lprint that makes the pdf and then opens it.
+
+Or forget all this and just print(latex(xxx)) and put in tex 
+document myself.
+

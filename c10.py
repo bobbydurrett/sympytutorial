@@ -25,6 +25,7 @@ spprint(solveset(x**2 - x, x))
 spprint(solveset(x - x, x, domain=S.Reals))
 spprint(solveset(sin(x) - 1, x, domain=S.Reals))
 
+print(latex(solveset(sin(x) - 1, x, domain=S.Reals)))
 
 
 
