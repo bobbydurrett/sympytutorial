@@ -24,7 +24,9 @@ global variable myprint.tex_file
 
 """
 
-def write_tex_file(tex_file, text_string):
+tex_file = ""
+
+def write_tex_file(text_string):
    """
    Writes one line to tex_file and 
    closes file
@@ -33,7 +35,7 @@ def write_tex_file(tex_file, text_string):
    file_handle.write(text_string+"\n")
    file_handle.close()   
 
-def startl(tex_file):
+def startl():
    """
    Writes header information
    to file_name_no_type.tex
@@ -43,49 +45,49 @@ def startl(tex_file):
    file_handle = open(tex_file, 'w')
    file_handle.close()   
       
-   write_tex_file(tex_file,"\\documentclass{article}")
-   write_tex_file(tex_file,"\\usepackage{amsfonts}")
-   write_tex_file(tex_file,"\\begin{document}")
+   write_tex_file("\\documentclass{article}")
+   write_tex_file("\\usepackage{amsfonts}")
+   write_tex_file("\\begin{document}")
    
-def addlt(tex_file, text_string):
+def addlt(text_string):
     """
     Writes some text
     skipping a big line.
     """  
     
-    write_tex_file(tex_file,text_string)
-    write_tex_file(tex_file," ")
-    write_tex_file(tex_file,"\\bigskip")
+    write_tex_file(text_string)
+    write_tex_file(" ")
+    write_tex_file("\\bigskip")
     
-def addlm(tex_file, sympy_object):
+def addlm(sympy_object):
     """
     Converts sympy object to latex
     and writes to tex file
     """
     
-    addlt(tex_file,"$"+latex(sympy_object)+"$")
+    addlt("$"+latex(sympy_object)+"$")
 
     
-def endl(tex_file):
+def endl():
     """
     Finishes writing to tex file and 
     converts to pdf
     """
     
-    write_tex_file(tex_file,"\\end{document}")
+    write_tex_file("\\end{document}")
         
     run(["pdflatex", tex_file])
 
-def onel(tex_file, sympy_object):
+def onel(sympy_object):
     """
     Writes one sympy object
     converts to latex then
     pdf
     """
-    startl(tex_file)
-    addlt(tex_file, str(sympy_object))
-    addlm(tex_file, sympy_object)
-    endl(tex_file)
+    startl()
+    addlt(str(sympy_object))
+    addlm(sympy_object)
+    endl()
 
 if __name__ == "__main__":
 
@@ -94,6 +96,8 @@ if __name__ == "__main__":
     x = symbols('x')
 
     spprint(Integral(cos(x)**2, (x, 0, pi)))
+    
+    tex_file = "myprint.tex"
 
-    onel("myprint.tex",Integral(cos(x)**2, (x, 0, pi)))
+    onel(Integral(cos(x)**2, (x, 0, pi)))
     
