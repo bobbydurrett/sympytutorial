@@ -38,3 +38,25 @@ I.e. write my own lprint that makes the pdf and then opens it.
 Or forget all this and just print(latex(xxx)) and put in tex 
 document myself.
 
+pdflatex test.tex
+
+then open test.pdf seems to work.
+
+have to delete test.aux and test.log files
+
+could do
+
+startlatex - creates .tex file with header
+
+addlatexline - converts one sympy object to latex and writes to file
+               between $$ $$
+               
+finishlatex - writes rest of .tex file and converts to .pdf and opens
+
+onelatexline - calls startlatex, addlatexline, finishlatex for one sympy 
+               object
+               
+put this in myprint.py
+
+or I could just print out the latex and edit manually.
+
