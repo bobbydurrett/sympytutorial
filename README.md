@@ -5,7 +5,7 @@ https://docs.sympy.org/latest/tutorial/index.html
 
 Next section:
 
-https://docs.sympy.org/latest/tutorial/solvers.html
+https://docs.sympy.org/latest/tutorial/matrices.html
 
 Made myprint.py to output latex as matplotlib plot.
 Also ascii pretty print with extra line.
