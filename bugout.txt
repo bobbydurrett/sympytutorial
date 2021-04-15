@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\p1c1227\OneDrive - US Foods\todoitems\sympytutorial\bug.py", line 3, in <module>
+    from sympy import shape
+ImportError: cannot import name 'shape' from 'sympy' (C:\Users\p1c1227\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sympy\__init__.py)
