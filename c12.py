@@ -20,8 +20,8 @@ spprint(M*N)
 M = Matrix([[1, 2, 3], [-2, 0, 4]])
 spprint(M)
 
-# cannot find shape
-#spprint(shape(M))
+# cannot find shape - is it in sympy-1.8
+spprint(shape(M))
 
 # rows and columns
 
