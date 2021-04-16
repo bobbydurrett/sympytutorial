@@ -1,0 +1,6 @@
+C:\Users\p1c1227\OneDrive - US Foods\todoitems\sympytutorial\c12.py:153: UserWarning: Zero testing of 4*cosh(q/3)**2 - 1 evaluated into None
+  warnings.warn("Zero testing of {} evaluated into None".format(x))
+C:\Users\p1c1227\OneDrive - US Foods\todoitems\sympytutorial\c12.py:153: UserWarning: Zero testing of 2*exp(q)*cosh(q/3) - 16*cosh(q/3)**4 + 12*cosh(q/3)**2 + 2*exp(-q)*cosh(q/3) evaluated into None
+  warnings.warn("Zero testing of {} evaluated into None".format(x))
+C:\Users\p1c1227\OneDrive - US Foods\todoitems\sympytutorial\c12.py:166: UserWarning: Zero testing of -2*cosh(q/3) - exp(-q) evaluated into None
+  warnings.warn("Zero testing of {} evaluated into None".format(x))
